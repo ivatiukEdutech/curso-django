@@ -1,0 +1,33 @@
+{% include 'recipes/partials/head.html' %}
+
+
+<body>
+    <form id="formFrequencia">
+        <div id="loading">
+            <legend>Carregando ... Aguarde</legend>
+        </div>
+        <div id="app">
+            <h1>FREQUÊNCIA DOS CURSOS DE EDUCAÇÃO INFANTIL</h1>
+            <label for="name" class="col-sm-2">Escolha o seu curso</label>
+            <select id="curso" name="curso" class="form-control" required>
+                <option value="" disabled selected>Escolha</option>
+            </select>
+            <label for="lbEscola" id='lbEscola' class="col-sm-2 ">Escolha seu NRE de atuação</label>
+            <select id="nre" name="nre" class="form-control" required>
+                <option value="" disabled selected>Escolha seu nre</option>
+            </select>
+            <label for="buscaAluno">Escolha seu nome</label>
+            <select id="nomeAluno" name="nomeAluno" class="form-control" required>
+                <option value="" disabled selected>Escolha o nome</option>
+
+            </select>
+            <button type="submit" class="m-2" id="btnEnviar">
+                Enviar
+            </button>
+    </form>
+
+    </div>
+
+</body>
+
+</html>
